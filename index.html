@@ -12,60 +12,64 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      color: white;
-      text-align: center;
+      font-family: Arial, sans-serif;
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: url('awakening-bg.png') no-repeat center center fixed;
-      background-size: cover;
+      text-align: center;
+      color: #fff;
+      background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("https://raw.githubusercontent.com/prodigyprojectapparel/prodigyprojectapparel.github.io/main/awakening-bg.png")
+        center center / cover no-repeat fixed;
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
       letter-spacing: 2px;
-      text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      text-transform: uppercase;
+      text-shadow: 0 0 20px rgba(0,0,0,0.6);
+      margin-bottom: 12px;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    .tagline {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      text-shadow: 0 0 15px rgba(0,0,0,0.6);
     }
 
     .arc {
-      margin-top: 25px;
-      font-size: 1rem;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      margin-bottom: 28px;
+      text-shadow: 0 0 15px rgba(0,0,0,0.6);
     }
 
-    .button {
-      margin-top: 30px;
-      background-color: #e74c3c;
-      color: white;
+    .btn {
+      background: #e74c3c;
       border: none;
-      padding: 15px 30px;
-      font-size: 1rem;
-      font-weight: bold;
+      color: #fff;
+      padding: 14px 30px;
       border-radius: 6px;
+      font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s;
+      font-size: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: background 0.2s ease;
     }
 
-    .button:hover {
-      background-color: #c0392b;
+    .btn:hover {
+      background: #c0392b;
     }
   </style>
 </head>
 <body>
   <h1>PRODIGY PROJECT APPAREL</h1>
-  <p>Be the Prodigy. Your own Prodigy.</p>
-  <div class="arc">ARC 001 — AWAKENING</div>
-  <button class="button">Drop coming soon</button>
+  <p class="tagline">Be the Prodigy. Your own Prodigy.</p>
+  <p class="arc">ARC 001 — AWAKENING</p>
+  <button class="btn">Drop coming soon</button>
 </body>
 </html>
