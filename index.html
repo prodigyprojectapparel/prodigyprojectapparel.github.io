@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prodigy Project Apparel</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
-      color: #ffffff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-    .tagline {
-      font-size: 1.2rem;
-      color: #d0d0d0;
-      margin-bottom: 30px;
-    }
-    .arc {
-      font-size: 0.9rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #bbbbbb;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: inline-block;
-      background: #e63946;
+      font-family: 'Arial', sans-serif;
       color: white;
-      padding: 12px 26px;
-      border-radius: 6px;
-      text-decoration: none;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('awakening-bg.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .arc {
+      margin-top: 25px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .button {
+      margin-top: 30px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #c0392b;
     }
   </style>
 </head>
 <body>
-  <h1>Prodigy Project Apparel</h1>
-  <p class="tagline">Be the Prodigy. Your own Prodigy.</p>
-  <p class="arc">Arc 001 — Awakening</p>
-  <a href="#" class="btn">Drop coming soon</a>
+  <h1>PRODIGY PROJECT APPAREL</h1>
+  <p>Be the Prodigy. Your own Prodigy.</p>
+  <div class="arc">ARC 001 — AWAKENING</div>
+  <button class="button">Drop coming soon</button>
 </body>
 </html>
